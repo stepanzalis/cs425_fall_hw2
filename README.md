@@ -22,7 +22,7 @@
      
      
 ### TODO:
-- [ ] Design
+- [x] Design
 - [ ] Home Page
 - [ ] About
 - [ ] Contact
