@@ -1,12 +1,5 @@
-@font-face { 
-	font-family: 'Raleway', Courier, sans-serif; 
-	src: url('fonts/Raleway.ttf'); 
-}
 
-@font-face {
-    font-family: 'Roboto', Courier, sans-serif;
-    src: url('fonts/Roboto-Regular.ttf');
-}
+
 
 /* GENERAL */
 html {
@@ -304,18 +297,31 @@ textarea {
     background: #212121;
 }  
 
-#gallery-wrapper {
+/* GALLERY */
+.home-wrapper, .gallery-wrapper {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
-#gallery-wrapper img {
+.gallery-wrapper img {
     max-width: 80%;
     min-height: 150px;
+    margin: 5px;
     width: 550px;
     height: 400px;
     object-fit: cover;
 }
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* VISION */
+.home-wrapper p, .home-wrapper a {
+    padding: 10px 80px 10px 80px; 
+}
+
 
 /* FOOTER */
 .footer {
