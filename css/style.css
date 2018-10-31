@@ -58,8 +58,8 @@ ul {
 }
 
 .brand-text {
-  text-align: center;  
-  font-size: 90%;
+  font-size: 4em;
+  margin-top: 140px;
   font-weight: bold;
 }
 
@@ -70,11 +70,17 @@ header {
     background: black;
 }
 
+header img {
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 header h1 {
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
  
 header hr {
