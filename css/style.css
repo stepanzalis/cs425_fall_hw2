@@ -78,11 +78,9 @@ ul {
 /* NAVIGATION */
 .navbar {
   background-color: black;  
-  text-align: center;
   width: 100%;
   padding: 25px 0px 25px 0px;
   z-index: 9999;
-  top: 0;
   position: fixed;
   position: -webkit-sticky;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* Material design shadow */
@@ -92,9 +90,11 @@ ul {
 
 .navbar ul {
     padding: 0;
-    margin: 0;
-    align-items: center;
+    margin: 0; 
+    position: relative;
+    width: 100%;   
     justify-content: center;
+    text-align: center;
 }
 
 .navbar ul li {
@@ -104,6 +104,11 @@ ul {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.navbar ul li:first-of-type {
+    padding-left: 0px;
+  }
+  
 
 .navbar ul li a {
   text-decoration: none;
@@ -119,19 +124,53 @@ ul {
     opacity: 1;
 }
 
+#logo {
+    font-size: 1em;
+    float: left;
+    margin: 0 0 0 20px; 
+    padding: 0;
+    color: white;
+}
+
 @media (max-width: 800px) {
-    .navbar ul li {
-        font-size: 20px;
-      padding-left: 15px;
-      padding-right: 15px;
+
+    .navbar ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar ul li, .navbar ul li:first-of-type {
+      display: inline;  
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    #logo {
+        margin-left: 10px;
     }
   }
-  
+
+
   @media (max-width: 500px) {
+
+    #logo {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
     .navbar ul li {
-      font-size: 20px;
-      display: block;
-      padding: 5px;
+      text-align: center;
+      display: inline;
+      padding: 10px;
+    }
+
+    .navbar ul li a {
+        text-align: center;
+        display: inline;
     }
   }
   
@@ -205,7 +244,7 @@ ul {
 }
 
 @media only screen and (max-width: 1060px) {
-    
+
     .contact-info, .form-container {
       width: 80%;
       margin: 0 auto;
