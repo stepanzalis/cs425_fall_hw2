@@ -173,7 +173,31 @@ ul {
         display: inline;
     }
   }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 50px;
+    z-index: 100;
+    float: right;
+    left: 90%;
+    max-width: 50px;
+ }
   
+  @media (max-width: 330px) {
+
+    .navbar ul li {
+      text-align: center;
+      display: block;
+      padding: 3px;
+    }
+
+    .navbar ul li a, .navbar ul li:first-of-type  {
+        text-align: center;
+        display: block;
+    }
+  }
+
+
 /* CONTAINER */
 .container-full {
     position: relative;
