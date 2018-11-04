@@ -23,7 +23,7 @@
      
 ### TODO:
 - [x] Design
-- [ ] Home Page
-- [ ] About
-- [ ] Contact
-- [ ] Responsive
+- [x] Home Page
+- [x] About
+- [x] Contact
+- [x] Responsive
