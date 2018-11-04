@@ -61,7 +61,7 @@ ul {
     background-color: black; /* prevents blinking */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/banner.jpg");
     height: 100vh;
-    z-index: 9998; /* one level below navbar because of "top-button" */
+    z-index: 9998; /* one level below of navbar because of "top-button" which must be below */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -448,7 +448,7 @@ textarea {
 @media (max-width: 500px) {
 
     #logo {
-        margin-left: 0px;
+        margin-left: 0;
         text-align: center;
         margin-bottom: 10px;
         width: 100%;
