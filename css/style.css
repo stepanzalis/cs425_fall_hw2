@@ -6,18 +6,18 @@ html {
     overflow-x: scroll;
 }
 
-html, body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     background: white;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     height: 100%;
     position: relative;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* GENERAL TEXT */
@@ -47,6 +47,11 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
     padding-left: 0;
+}
+
+
+.top-margin-40 {
+    margin-top: 40px;
 }
 
 /* CONTAINER */
@@ -121,7 +126,7 @@ ul {
 .navbar ul li a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
-    font-size: 90%;
+    font-size: 0.9em;
     opacity: 0.7;
     font-weight: 900;
     -webkit-transition: border-bottom 0.3s, opacity 0.5s; /* Safari */
@@ -132,6 +137,7 @@ ul {
     opacity: 1;
 }
 
+/* JOHN DOE logo on the left of page */
 #logo {
     font-size: 1em;
     float: left;
@@ -151,6 +157,129 @@ ul {
 /* VISION */
 .home-wrapper p, .home-wrapper a {
     padding: 10px 80px 10px 80px;
+}
+
+/* GALLERY */
+.home-wrapper, .gallery-wrapper {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.gallery-wrapper img {
+    max-width: 80%;
+    min-height: 150px;
+    margin: 5px;
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+ /* Make space between social media icons and author/licence */
+.footer p:first-of-type {
+    padding-top: 15px;
+}
+
+/* ABOUT */
+.about-left-panel, .about-right-panel {
+    height: 100vh;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.about-left-panel img {
+    height: 100%;
+    object-fit: cover;
+    background-color: white; /* prevents blinking */
+    width: 100%;
+}
+
+.about-right-panel {
+    background-color: white;
+    float: right;
+}
+
+.about-right-panel h3 {
+    font-size: 1.5em;
+    margin: 40px 30px 20px 30px;
+}
+
+.about-right-panel p {
+    font-size: 1em;
+    padding: 10px 30px 10px 30px;
+}
+
+/* FORM - CONTACT PAGE
+   a) address box
+*/
+.contact-info {
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 0 50px 40px;
+    width: 42%;
+    height: 70%;
+    float: left;
+    text-align: left;
+    -webkit-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+}
+
+.contact-wrapper {
+    display: table;
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-weight: 700;
+    font-size: 110%;
+    padding-left: 30px;
+}
+
+.contact-info ul li {
+    list-style-type: none;
+    padding-left: 40px;
+}
+
+.contact-info ul p {
+    padding-left: 30px;
+}
+
+.contact-info iframe {
+    padding: 0;
+    margin-top: 0;
+}
+
+/* FORM - FORM PAGE
+    b) form box
+*/
+.form-container {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    padding: 0 35px 50px 35px;
+    margin: 50px 40px 0 0;
+    width: 42%;
+    -webkit-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+    -ms-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
+}
+
+.form-input {
+    color: #3c3c3c;
+    font-size: 15px;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Icons */
@@ -189,10 +318,6 @@ ul {
     background-repeat: no-repeat;
 }
 
-.top-margin {
-    margin-top: 40px;
-}
-
 textarea {
     width: 100%;
     height: 150px;
@@ -219,26 +344,6 @@ textarea {
     background: #212121;
 }
 
-/* GALLERY */
-.home-wrapper, .gallery-wrapper {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.gallery-wrapper img {
-    max-width: 80%;
-    min-height: 150px;
-    margin: 5px;
-    width: 550px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.icon {
-    width: 25px;
-    height: 25px;
-}
-
 /* FOOTER */
 .footer {
     display: inline-block;
@@ -259,108 +364,7 @@ textarea {
     color: white;
 }
 
- /* Make space between social media icons and author/licence */
-.footer p:first-of-type {
-    padding-top: 15px;
-}
-/* ABOUT */
-.left-panel, .right-panel {
-    height: 100vh;
-    width: 50%;
-    padding: 0;
-    margin: 0;
-    float: left;
-}
-
-.left-panel img {
-    height: 100%;
-    object-fit: cover;
-    background-color: white; /* prevents blicking */
-    width: 100%;
-}
-
-.right-panel {
-    background-color: white;
-    float: right;
-}
-
-.right-panel h3 {
-    font-size: 1.5em;
-    margin: 40px 30px 20px 30px;
-}
-
-.right-panel p {
-    font-size: 1em;
-    padding: 10px 30px 10px 30px;
-}
-
-/* CONTACT PAGE
-   a) address box
-*/
-.contact-info {
-    font-family: 'Roboto', sans-serif;
-    margin: 50px 0 50px 40px;
-    width: 42%;
-    height: 70%;
-    float: left;
-    text-align: left;
-    -webkit-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-}
-
-.contact-wrapper {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-
-.contact-info h3 {
-    font-weight: 700;
-    font-size: 110%;
-    padding-left: 30px;
-}
-
-.contact-info ul li {
-    list-style-type: none;
-    padding-left: 40px;
-}
-
-.contact-info ul p {
-    padding-left: 30px;
-}
-
-.contact-info iframe {
-    padding: 0;
-    margin-top: 0;
-}
-
-/* FORM 
-    a) form box
-*/
-.form-container {
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    padding: 0 35px 50px 35px;
-    margin: 50px 40px 0 0;
-    width: 42%;
-    -webkit-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-    -ms-box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 0 0 14px -5px rgba(0, 0, 0, 0.75);
-}
-
-.form-input {
-    color: #3c3c3c;
-    font-size: 15px;
-    padding: 13px 13px 13px 54px;
-    margin-bottom: 10px;
-    width: 100%;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
+/* RESPONSIVE */
 @media only screen and (max-width: 1060px) {
 
     .about-wrapper {
@@ -368,13 +372,13 @@ textarea {
         padding: 0;
     }
 
-    .left-panel, .right-panel {
+    .about-left-panel, .about-right-panel {
         float: none;
         width: 100%;
         height: 50%;
     }
 
-    .right-panel {
+    .about-right-panel {
         margin-top: -15px;
     }
 
@@ -439,7 +443,7 @@ textarea {
         right: 50px;
     }
 
-    .left-panel img {
+    .about-left-panel img {
         margin-top: 60px;
     }
 
@@ -474,7 +478,7 @@ textarea {
         padding: 10px 30px 10px 30px;
     }
 
-    .left-panel img {
+    .about-left-panel img {
         margin-top: 80px;
     }
 }
@@ -501,7 +505,7 @@ textarea {
         right: 20px;
     }
 
-    .left-panel img {
+    .about-left-panel img {
         margin-top: 100px;
     }
 
@@ -536,7 +540,7 @@ textarea {
         background-size: 15px 15px;
     }
 
-    /* different ration - different position to center the icon */
+    /* different ratio - different position to center the icon */
     #date {
         background-position: 11px 16px;
     }
