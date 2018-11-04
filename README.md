@@ -27,3 +27,4 @@
 - [x] About
 - [x] Contact
 - [x] Responsive
+- [ ] Animations
